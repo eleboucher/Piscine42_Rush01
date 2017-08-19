@@ -6,7 +6,7 @@
 /*   By: elebouch <elebouch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/19 13:23:40 by elebouch          #+#    #+#             */
-/*   Updated: 2017/08/19 18:50:24 by elebouch         ###   ########.fr       */
+/*   Updated: 2017/08/19 19:23:42 by elebouch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int		array_width(char *array)
 	int i;
 
 	i = 0;
-	while(array[i] != '\n')
+	while(array[i] != '\n' && array[i])
 		i++;
 	return (i);
 }
@@ -41,7 +41,7 @@ int		colle_type(char *array)
 {
 	int width;
 	int height;
-
+	
 	width = array_width(array);
 	height = array_height(array);
 	if (array[0] == 'o')
@@ -52,10 +52,10 @@ int		colle_type(char *array)
 		return (5);
 	else if (array[0] == 'A')
 	{
-		if (array[width] == 'A')
-			return (2);
 		if (height == 1)
 			return (6);
+		if (array[width] == 'A')
+			return (2);
 		if (array[ft_strlen(array) - 2] == 'C')
 			return (3);
 		else if (array[ft_strlen(array) - 2] == 'A')
