@@ -6,7 +6,7 @@
 /*   By: elebouch <elebouch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/19 14:18:23 by elebouch          #+#    #+#             */
-/*   Updated: 2017/08/19 15:18:24 by elebouch         ###   ########.fr       */
+/*   Updated: 2017/08/19 19:27:41 by elebouch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,13 +24,7 @@ int		ft_strlen(char *str)
 
 void	ft_putchar(char c)
 {
-	write (1,&c,1);
-}
-
-void	ft_putstr(char *str)
-{
-	while (*str)
-		write(1,str,sizeof(str));
+	write(1, &c, 1);
 }
 
 void	ft_putnbr(int nb)
