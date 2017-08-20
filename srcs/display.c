@@ -6,7 +6,7 @@
 /*   By: elebouch <elebouch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/19 14:16:46 by elebouch          #+#    #+#             */
-/*   Updated: 2017/08/19 19:20:39 by elebouch         ###   ########.fr       */
+/*   Updated: 2017/08/20 09:37:26 by elebouch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,12 @@ void	typefive(char *array)
 	ft_putnbr(array_width(array));
 	write(1, "] [", 3);
 	ft_putnbr(array_height(array));
-	write(1, "] || [", 6);
+	write(1, "] || ", 5);
 	write(1, "[colle-03] [", 12);
 	ft_putnbr(array_width(array));
 	write(1, "] [", 3);
 	ft_putnbr(array_height(array));
-	write(1, "] || [", 6);
+	write(1, "] || ", 5);
 	write(1, "[colle-04] [", 12);
 	ft_putnbr(array_width(array));
 	write(1, "] [", 3);
@@ -37,7 +37,7 @@ void	typesix(char *array)
 	ft_putnbr(array_width(array));
 	write(1, "] [", 3);
 	ft_putnbr(array_height(array));
-	write(1, "] || [", 6);
+	write(1, "] || ", 5);
 	write(1, "[colle-04] [", 12);
 	ft_putnbr(array_width(array));
 	write(1, "] [", 3);
