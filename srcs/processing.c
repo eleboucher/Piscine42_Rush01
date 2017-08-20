@@ -6,7 +6,7 @@
 /*   By: elebouch <elebouch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/19 13:23:40 by elebouch          #+#    #+#             */
-/*   Updated: 2017/08/20 09:36:23 by elebouch         ###   ########.fr       */
+/*   Updated: 2017/08/20 15:25:08 by elebouch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ int		colle_type(char *array)
 		return (5);
 	else if (array[0] == 'A')
 	{
-		if (height == 1)
+		if (height == 1 && array[width] == 'C')
 			return (6);
 		if (array[width] == 'A')
 			return (2);
